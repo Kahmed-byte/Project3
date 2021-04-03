@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My form</title>
+</head>
+<header>
+    <h1>THE CODE REVIEW</h1>
+    <h2> <b>Sign for our newsletter</b></h2>
+    <p class="firstp">Get the latest news on how your code is <br> doing right in your inbox</p>
+</header>
+<body>
+    <form action="/my-handling-form-page" method="post">
+        <h1 class="contact">Contact Information</h1>
+        <ul>
+            <li>
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Required">
+            </li>
+            <li>
+              <label for="mail">Email Address</label>
+              <input type="email" id="mail" name="user_email" placeholder="Required">
+            </li>
+            <li>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone">
+            </li>
+            <li>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+              </li>
+              <li>
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="Choose State">Choose State</option>
+                    <option value="First Choice">State A</option>
+                    <option value="Second Choice">State B</option>
+                    <option value="Third Choice">State C</option>
+                    <option value="Fourth Choice">State D</option>
+                </select>
+              </li>
+              <li>
+                  <label class="ziplabel" for="zip">Zip Code</label>
+                  <input id="zip" name="zip" type="text">
+              </li>
+           </ul>
+    </form>
+    <hr>
+    <div class="boxtwo">
+    <h1><b>Newsletter</b></h1>
+    <p>Select the newsletter you would like to receive</p>
+    <div>
+      <input class="one" type="checkbox" id="scales" name="scales">
+      <label class="two" for="scales">HTML News</label>
+      <input class="one" type="checkbox" id="horns" name="horns">
+      <label class="two" for="horns">CSS News</label>
+      <input class="one" type="checkbox" id="horns" name="horns">
+      <label class="two" for="horns">Javascript News</label>
+    </div>
+      <p>Newsletter format</p>
+      <label class="container">HTML
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Plain text
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <form>
+        <label for="fname">Other topics you'd like to hear about</label>
+        <input class="lastform" type="text" id="fname" name="fname">
+      </form>
+      <button type="button"> <b>Sign up</b></button>
+      <h3> <i>Copyright The Code Review</i></h3>
+</div>
+</body>
+</html>

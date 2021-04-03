@@ -1,0 +1,191 @@
+body {
+  width: 320px;
+  margin: 0;
+  font-size: x-small;
+}
+header {
+  text-align: center;
+  border-bottom: 7px double;
+}
+header h1 {
+  margin-top: 0%;
+  color: white;
+  background-color: teal;
+  padding: 20px;
+}
+
+header h2 {
+  margin-bottom: 5px;
+}
+
+header p {
+  margin-top: 0;
+}
+form {
+  /* Center the form on the page */
+  position: relative;
+  margin: 12px 5px 12px 5px;
+  /* Form outline */
+  padding: 0 0 2em 0;
+}
+hr {
+  background-color: black;
+  height: 2px;
+}
+.contact {
+  margin-left: 7px;
+  text-align: start;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  padding: 0 0 5px 0;
+  display: block;
+}
+
+.ziplabel {
+  margin-top: 45px;
+}
+
+input {
+  width: -webkit-fill-available;
+  /* position: absolute; */
+  font: 1em sans-serif;
+  /* align text */
+  text-align: end;
+  padding: 10px;
+  /* Match form field borders */
+  border: 1px solid #999;
+  background-color: rgb(185, 185, 185);
+}
+
+#state {
+  position: absolute;
+  font: 1em sans-serif;
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  /* Match form field borders */
+  border: 1px solid #999;
+  background-color: rgb(185, 185, 185);
+  /* margin: 0 76px; */
+}
+
+#zip {
+  width: 70px;
+}
+
+option {
+  background-color: white;
+}
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0px;
+  left: 1px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 2px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+}
+
+.boxtwo {
+  padding: 20px 20px 20px 7px;
+}
+.one {
+  width: 13px;
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  margin-top: auto;
+}
+.two {
+  display: block;
+  right: -31px;
+  position: relative;
+}
+.lastform {
+  width: 300px;
+  height: 100px;
+  padding: 12px 20px;
+  margin: 8px 0 0 -7px;
+  box-sizing: border-box;
+  border: 2px solid;
+  border-radius: 4px;
+}
+button {
+  border-radius: 7px;
+  padding: 15px;
+  width: 300px;
+  margin-top: -10px 0 7px -7px;
+  color: white;
+  background-color: green;
+}
+h3 {
+  text-align: center;
+}
