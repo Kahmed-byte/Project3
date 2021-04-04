@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
     <title>My form</title>
 </head>
+<body>
 <header>
     <h1>THE CODE REVIEW</h1>
     <h2> <b>Sign for our newsletter</b></h2>
     <p class="firstp">Get the latest news on how your code is <br> doing right in your inbox</p>
 </header>
-<body>
-    <form action="/my-handling-form-page" method="post">
+    <form id="firstform" action="/my-handling-form-page" method="post">
         <h1 class="contact">Contact Information</h1>
+        <div class="parent">
         <ul>
             <li>
-              <label for="name">Full Name</label>
-              <input type="text" id="name" name="user_name" placeholder="Required">
+              <label class="toplabels" for="name">Full Name</label>
+              <input class="topinput" type="text" id="name" name="user_name" placeholder="Required">
             </li>
             <li>
-              <label for="mail">Email Address</label>
-              <input type="email" id="mail" name="user_email" placeholder="Required">
+              <label class="toplabels" for="mail">Email Address</label>
+              <input class="topinput" type="email" id="mail" name="user_email" placeholder="Required">
             </li>
             <li>
-                <label for="phone">Phone number</label>
-                <input type="tel" id="phone" name="phone">
+                <label class="toplabels" for="phone">Phone number</label>
+                <input class="topinput" type="tel" id="phone" name="phone">
             </li>
             <li>
-                <label for="city">City</label>
-                <input type="text" id="city" name="city">
+                <label class="toplabels" for="city">City</label>
+                <input class="topinput" type="text" id="city" name="city">
               </li>
               <li>
-                <label for="state">State</label>
-                <select id="state" name="state">
+                <label class="toplabels" for="state">State</label>
+                <select class="topinput" id="state" name="state">
                     <option value="Choose State">Choose State</option>
                     <option value="First Choice">State A</option>
                     <option value="Second Choice">State B</option>
@@ -47,18 +48,20 @@
                   <input id="zip" name="zip" type="text">
               </li>
            </ul>
+          </div>
     </form>
     <hr>
     <div class="boxtwo">
+      <div class="lastsection">
     <h1><b>Newsletter</b></h1>
     <p>Select the newsletter you would like to receive</p>
     <div>
       <input class="one" type="checkbox" id="scales" name="scales">
       <label class="two" for="scales">HTML News</label>
-      <input class="one" type="checkbox" id="horns" name="horns">
-      <label class="two" for="horns">CSS News</label>
-      <input class="one" type="checkbox" id="horns" name="horns">
-      <label class="two" for="horns">Javascript News</label>
+      <input class="one" type="checkbox" id="css" name="css">
+      <label class="two" for="css">CSS News</label>
+      <input class="one" type="checkbox" id="javascript" name="javascript">
+      <label class="two" for="javascript">Javascript News</label>
     </div>
       <p>Newsletter format</p>
       <label class="container">HTML
@@ -69,12 +72,15 @@
         <input type="radio" name="radio">
         <span class="checkmark"></span>
       </label>
+    </div>
+    </div>
       <form>
         <label for="fname">Other topics you'd like to hear about</label>
-        <input class="lastform" type="text" id="fname" name="fname">
+        <textarea class="lastform" id="fname"></textarea>
       </form>
+      <div class="lastsection">
       <button type="button"> <b>Sign up</b></button>
+    </div>
       <h3> <i>Copyright The Code Review</i></h3>
-</div>
 </body>
 </html>
