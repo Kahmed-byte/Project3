@@ -92,6 +92,7 @@ select {
   background-color: rgb(240, 240, 240);
   width: 25%;
   height: 25px;
+  margin-top: 8px;
 }
 hr {
   width: 315px;
@@ -164,9 +165,7 @@ h3 {
     margin-top: 0;
     margin-right: 25%;
   }
-  input[type="text"] {
-    width: relative;
-  }
+
   #tophr {
     display: block;
     height: 0;
