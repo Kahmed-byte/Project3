@@ -49,6 +49,10 @@ label {
   font-size: large;
 }
 
+input:focus {
+  text-align: left !important;
+}
+
 .paragraph {
   display: block;
   text-align: left;
@@ -67,12 +71,15 @@ label {
 #city {
   font-size: small;
   background-color: rgb(240, 240, 240);
-  text-align: end;
+  text-align: start;
   border: none;
   margin: 10px 0;
   width: 92%;
   height: 25px;
   padding: 5px 10px;
+}
+::placeholder {
+  text-align: end;
 }
 select {
   margin: 10px 0;
