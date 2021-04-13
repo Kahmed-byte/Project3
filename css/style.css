@@ -27,7 +27,6 @@ p {
   font-size: large;
   text-align: center;
   margin-top: 0;
-  color: rgb(161, 161, 161);
 }
 #tophr {
   display: none;
@@ -39,20 +38,6 @@ fieldset {
 legend {
   padding: 20px 0;
 }
-.paragraph {
-  font-size: large;
-  text-align: left;
-  margin-top: 0;
-  color: rgb(161, 161, 161);
-}
-
-.paragraph2 {
-  margin-top: 10px;
-  font-size: large;
-  text-align: left;
-  margin-top: 10px;
-  color: rgb(161, 161, 161);
-}
 
 form {
   border-top: solid 0.1px;
@@ -63,6 +48,19 @@ label {
   color: rgb(161, 161, 161);
   font-size: large;
 }
+
+.paragraph {
+  display: block;
+  text-align: left;
+  margin-top: 0;
+}
+
+#textinstruks {
+  display: inline-block;
+  text-align: left;
+  margin: 10px 0 7px 0;
+}
+
 #fname,
 #email,
 #phone,
@@ -106,7 +104,7 @@ textarea {
   border-radius: 2px;
   border-color: rgb(240, 240, 240);
 }
-button {
+#submit {
   height: 50px;
   width: 100%;
   margin: 10px 0;
