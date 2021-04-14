@@ -159,10 +159,7 @@ h3 {
   #state,
   #zip {
     margin-top: 0;
-    width: 100%;
-    width: -moz-available; /* WebKit-based browsers will ignore this. */
     width: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
     margin-left: 160px;
   }
 
