@@ -52,8 +52,8 @@ label {
 }
 
 input:focus {
-  box-shadow: blue !important;
   text-align: left !important;
+  background-color: rgb(241, 233, 233); /*This doesen't work...?*/
 }
 
 .paragraph {
@@ -130,7 +130,7 @@ h3 {
   text-align: center;
   margin-bottom: 50px;
 }
-
+/*Why is min-width 768px working only on dev tools?*/
 @media only screen and (min-width: 768px) {
   body {
     width: 100%;
