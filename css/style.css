@@ -3,10 +3,6 @@ body {
   width: 320px;
   margin: 0;
 }
-p {
-  color: rgb(161, 161, 161);
-}
-
 header {
   border-bottom: solid 3px;
   margin-bottom: 2px;
@@ -26,6 +22,7 @@ header h2 {
 }
 
 p {
+  color: rgb(161, 161, 161);
   font-size: medium;
   text-align: center;
   margin-top: 0;
@@ -33,27 +30,20 @@ p {
 #tophr {
   display: none;
 }
-fieldset {
+.fieldset {
   border: none;
   padding: 0 0 20px 0;
 }
-legend {
+.legend {
   padding: 20px 0;
 }
 
-form {
+.form {
   border-top: solid 0.1px;
-  margin-left: 1px;
-  margin-bottom: 20px;
 }
 label {
   color: rgb(161, 161, 161);
   font-size: medium;
-}
-
-input:focus {
-  text-align: left !important;
-  background-color: rgb(241, 233, 233); /*This doesen't work...?*/
 }
 
 .paragraph {
@@ -84,15 +74,14 @@ input:focus {
 ::placeholder {
   text-align: end;
 }
-select {
-  margin: 10px 0;
-  font-size: medium;
-}
+
 #state {
   border: none;
   background-color: rgb(240, 240, 240);
   width: 98%;
   height: 30px;
+  margin: 10px 0;
+  font-size: medium;
 }
 #zip {
   border: none;
@@ -109,7 +98,7 @@ hr {
   background-color: black;
 }
 
-textarea {
+#textfield {
   width: 98%;
   background-color: rgb(240, 240, 240);
   border-radius: 2px;
@@ -142,18 +131,15 @@ h3 {
     font-size: x-small;
     padding-bottom: 10px;
   }
-  form {
+  .form {
     border-top: solid 3px;
     align-items: center;
     margin: 12px 25%;
   }
 
-  legend {
+  .legend {
     font-size: large;
     padding-top: 20px;
-  }
-  #legendnews {
-    padding-bottom: 20px;
   }
 
   .upperlabels {
